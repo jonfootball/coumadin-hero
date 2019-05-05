@@ -1,0 +1,20 @@
+<div class="landing-page-wrapper col-xs-offset-1 col-xs-10">
+	
+	<div ng-if="!selectedItem">
+	    <table class="table table-striped info-table">
+		    <tr ng-click="playMiniGames()"><td><strong>Play the Mini-Games!</strong><span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></td></tr>
+		    <tr ng-repeat="item in info" ng-class="rowClass(item)" ng-click="showInfo(item)">
+		        <td>{{ item.title }} <span class="glyphicon glyphicon-menu-right pull-right" aria-hidden="true"></span></td>
+		    </tr>    
+		</table>
+	<small>**University of Maryland Medical Center Anticoagulation Clinic</small>
+	</div>
+
+	<div ng-if="selectedItem">
+	    <div ng-include="'./components/shared/info-detail.html'"></div>
+	</div>
+
+</div>
+
+
+

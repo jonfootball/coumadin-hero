@@ -1,0 +1,900 @@
+.modal-header-scroll {
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+.modal-content-scroll {
+    bottom: 90px;
+    top: 150px;
+    overflow-y: auto;
+    background-color: white;
+    color:blue;
+    margin-top: 5px;
+    padding-bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.modal-content-scroll-rules {
+    bottom: 90px;
+    top: 120px;
+    overflow-y: auto;
+    background-color: white;
+    color:blue;
+    margin-top: 5px;
+    padding-bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+
+.modal-footer-scroll {
+	height: 100px;
+    bottom: 0;
+
+}
+
+
+
+
+
+.trophy-img-body {
+	max-height: 335px;
+}
+#high-low-blue {
+	color: blue;
+	padding:0px; 
+	font-size:.9em;
+}
+/*guy images*/
+.thinking-guy {
+	background-image: url('../images/weird-guy/thinking-idea-guy.jpg');
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+.vit-k-scenario-coumadin {
+	/*background-image: url('../images/weird-guy/text-board-guy-1.jpg');*/
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*height: 450px;*/
+    /*width: 100%;*/
+}
+.vit-k-scenario-coumadin img, .vit-k-scenario-rules img {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.vit-k-scenario-rules {
+	/*background-image: url('../images/weird-guy/text-board-guy-2.jpg');*/
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+   /* height: 450px;*/
+    /*width: 100%;*/
+
+}
+.vit-k-scenario-champion {
+	background-image: url('../images/weird-guy/champion-guy.jpg');
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100%;
+
+}
+.vit-k-game-banner {
+	padding-left: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.vitamin-k-foods-footer {
+	padding: 0px 10px;
+	position: fixed;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	height: 70px;
+	z-index: 200;
+}
+.vitamin-k-foods-header {
+	padding-bottom: 10px;
+	padding-right: 0px
+}
+.vitamin-k-foods-body {
+	padding-top:0px;
+}
+
+.selection-items {
+	margin: 5px;
+}
+
+
+/* vitamin-k-foods */
+.challenge-food {
+	padding: 0px;
+}
+/* game colors */
+.diet {
+	color: #1b8c76;
+}
+.diet-bg {
+	background-color: #1b8c76;
+	color: #f2f2f2;
+}
+/*.oral-hygiene {
+	color: #6abab8;
+}
+.oral-hygiene-bg {
+	background-color: #6abab8;
+	color: #f2f2f2 ;
+}*/
+.safety {
+	color: #db584d;
+}
+.safety-bg {
+	background-color: #db584d;
+	color: #f2f2f2 ;
+}
+.drug-interaction {
+	color: #ef9233;
+}
+.drug-interaction-bg {
+	background-color: #ef9233;
+	color: #f2f2f2 ;
+}
+.pt-inr-monitoring {
+	color: #ddc02f;
+}
+.pt-inr-monitoring-bg {
+	background-color: #ddc02f;
+	color: #f2f2f2 ;
+}
+/*.drug-interaction {
+	color: #ef9233;
+}
+.drug-interaction-bg {
+	background-color: #ef9233;
+	color: #f2f2f2 ;
+}
+.pt-inr-monitoring {
+	color: #ddc02f;
+}
+.pt-inr-monitoring-bg {
+	background-color: #ddc02f;
+	color: #f2f2f2 ;
+}*/
+.info {
+	color: rgba(221, 47, 134, 0.62);
+}
+.info-bg {
+	background-color: white;/*rgba(221, 47, 134, 0.62);*/
+	color: #f2f2f2 ;
+}
+
+
+/*Shared items*/
+body { /* resetting the background color - offsets the issue in .app-body*/
+	background-color: #f7f4ed;
+}
+
+.user-welcome {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 24px;
+	background-color:  #f2f2f2;
+}
+
+i.fa {
+	padding-right: 8px;
+}
+i.fa.no-padding {
+	padding-right: 0px;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+.no-border {
+	border: none!important;
+}
+/*.ca-btn-success {
+	color: #f2f2f2;
+    background-color: #405c70;
+    border-color: #405c70;
+}*/
+#view-info {
+	margin: 2px;
+}
+
+/*login page*/
+
+#app-header {
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 50px;
+	border-bottom: 1px solid #bbb;
+}
+#app-header .header-item {
+    width: 100%;
+    padding: 5px 0px;
+	font-family: arial black;
+	font-weight: bold;
+	font-size: 15px;
+}
+#app-header .header-item-wrapper {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+#app-header .negative-score {
+	color: red;
+}
+
+.title-header h1{
+	font-weight: bold;
+	color: #405c70;
+}
+
+.login-btn {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.login-body div {
+	padding-top: 20px;
+}
+
+/* Registration Form */
+/*.registration-form .form-control {
+	border-radius: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 40px;
+	padding: 10px 20px;
+	font-size: 18px;
+	line-height: 1.2;
+}*/
+
+.registration-form .form-control {
+	border: none;
+	border-bottom: 1px solid #808080;
+	margin-bottom: 5px;
+	height: 40px;
+	padding: 10px;
+	font-size: 18px;
+	line-height: 1.2;
+	background-color: transparent;
+	box-shadow: none;
+	padding: 5px;
+}
+
+.btn-group.radio-button, .registration-form.radio-button {
+	padding-top: 0px;
+	margin-top: 10px
+}
+
+.registration-form button {
+	margin-top: 20px;
+}
+
+/*landing page and info detail */
+.landing-page-wrapper {
+	margin-top: 50px;
+	background-color: #fff;
+	border-radius: 7px;
+	padding: 5px 15px;
+}
+.blue-info-text {
+	color: blue;
+}
+p,body {
+
+}
+h1,h2,h3,h4,h5,h6,.btn {
+	font-family: arial black;
+	font-weight: bold;
+}
+body, label {
+	font-size: 16pt;
+}
+
+#info-modal-body, #modal-body{
+	padding-bottom: 0px;
+	padding-top:5px;
+}
+#info-modal-header {
+	padding-bottom: 5px;
+	padding-top:5px;
+}
+
+.modal-body {
+	background-color: white;
+	color: blue;
+}
+
+.info-table{
+	border: none;
+}
+.info-table .glyphicon{
+	color: #696969;
+}
+.info-detail .btn-div{
+	padding: 15px;
+	text-align: center;
+}
+#app-info-modal-body {
+	background-color: #fff;
+	border-radius: 7px;
+	margin: 15px;
+	color: #333
+}
+/*mini-game-launch page*/
+.mini-game-launch-wrapper {
+	cursor: pointer;
+}
+.mini-game-launch-container {
+	/*margin-bottom: 20px;*/
+	/*padding-top: 10px;
+	padding-bottom: 10px;*/
+	padding: 10px 0 10px 10px;
+	text-align: right;
+}
+.mini-game-launch-inner {
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 7px;
+	text-align: center;
+}
+.mini-game-launch-container img {
+	display: inline-block;
+	/*border-radius: 50%;*/
+	background-color: rgba(247,244,237,1);
+}
+.mini-game-launch-inner h3 {
+	font-size: 5.5vw;
+}
+.mini-game-launch-label-container {
+	padding-left: 0;
+}
+.mini-game-launch-label {
+	padding: 5px;
+    border-bottom: 5px solid #aaa;
+    margin-top: 25px;
+}
+
+/* full-screen modal */
+.modal-dialog.modal-fs {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal-dialog.modal-fs .modal-content {
+	border-radius: 0;
+	border: 0;
+	/*background-color: #AFE7F9;*/
+	background-color: #8DC5D7;
+	color: #363636;
+	box-shadow: none;
+	min-height: 100%;
+}
+
+.scenario-footer {
+	/*text-align: right;*/
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	z-index: 200;
+}
+
+.scenario-footer #scenario-done-btn {
+	float: right;
+}
+.scenario-footer .btn {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.score-change {
+	font-size: 24px;
+}
+
+.score-change-good {
+	color: #5cb85c;
+}
+
+.score-change-neutral {
+	color: #f0ad4e;
+}
+
+.score-change-bad {
+	color: #d9534f;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+/* minigames */
+.minigame-outer-wrapper {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.minigame-inner-wrapper {
+	height: 100%;
+}
+.top-half-wrapper {
+}
+.bottom-half-wrapper {
+	padding: 15px;
+}
+h3.mini-game-title {
+	margin-bottom: 0px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+/******* Diet *********/
+.eating-wrapper {
+	height: 100%;
+}
+.food-item-wrapper {
+    border: 0;
+    border-radius: 0px;
+    max-height: 175px;
+    max-width: 175px;
+    padding: 0px;
+}
+.food-card {
+	/*margin-top: 5px;
+	margin-bottom: 20px;*/
+	position: relative;
+	padding: 5px;
+    z-index: 90;
+    height: 100%;
+}
+/*.food-icon {
+	vertical-align: baseline;
+	width: 100%;
+}*/
+.food-icon {
+    vertical-align: baseline;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.food-icon-vit-k {
+    margin-left: auto;
+    margin-right: auto;
+}
+.food-card-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    box-shadow: 0px 0px 20px 2px #444;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 10;
+}
+/*.food-card-expand .food-icon {
+	margin: -20px;
+}*/
+.food-label {
+    color: #405c70;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    padding: 0px;
+    font-size: 16pt;
+    bottom: 0px;
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    width: auto;
+    z-index: 100;
+}
+.vitamin-k-food-label {
+    color: #405c70;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    font-size: 16pt;
+}
+/*.food-label .food-label-inner {
+    box-shadow: 0 0 10px 10px #f7f4ed;
+    background-color: #f7f4ed;
+}*/
+
+#buffet-region {
+	padding: 30px 0 0 0;
+}
+#buffet-region, #plate-region{
+	height: 50%;
+}
+/*#plate-region {
+	padding: 10px 15px;
+	margin: 20px;
+}*/
+
+.eating-plate {
+	background-image: url('/images/food-graphics/plate-setting.png');
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 15px;
+	margin: 20px;
+}
+
+.scenario-outer-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 70px;
+}
+
+/*Info*/
+#info-wrapper {
+	padding: 40px;
+}
+
+.quarter-height {
+	height: 25%;
+}
+
+.three-quarter-height {
+	height: 75%;
+}
+
+.third-height {
+	height: 33%;
+}
+
+.two-thirds-height {
+	height: 67%;
+}
+
+.half-height {
+	height: 50%;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.percent-height-40 {
+	height: 40%;
+}
+
+.diet-scenario-instructions {
+	padding: 5px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+    left: -30px;
+    right: -30px;
+}
+
+.diet-center-plate {
+	background-image: url('/images/food-graphics/plate.png');
+	background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+    border-radius: 20px;
+    margin: 0 -60px;
+}
+
+.btn.diet-submit {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+}
+
+.result-list {
+	list-style: none;
+}
+
+.btn, .header-item, .score-label {
+	white-space: normal;
+	background-color: white;
+	color: blue;
+	border: 1px solid #589;
+}
+.btn-large {
+    padding: 10px 50px;
+    font-size: 28px;
+}
+.btn-xl {
+    padding: 10px 10px;
+    font-size: 28pt;
+    width: 100%;
+}
+
+img.center-image {
+	margin: 0 auto;
+}
+
+hr.modal-separator {
+	border-color: e5e5e5;
+}
+
+.scenario-header-icon {
+    float: left;
+    border: 2px solid #ccc;
+    margin-top:10px;
+    margin-left: 10px;
+    /*border-radius: 50px;*/
+}
+
+.diet-center-plate .row.first-row {
+    display: flex;
+    align-items: flex-end;
+}
+
+.coumadin-info-list li {
+	list-style: none;
+    padding: 5px 0;
+    cursor: pointer;
+    color: blue;
+    font-weight: bold;
+}
+
+#message-container {
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+}
+#message-container .message-wrapper {
+	width: 100%;
+	padding: 3px;
+}
+#message-container .message {
+	background-color: #6692dd;
+	position: relative;
+	width: 100%;
+	z-index: 150;
+	padding: 10px;
+	font-size: 16pt;
+}
+#message-container .message.warning {
+	background-color: #dd7866;
+	position: relative;
+	width: 100%;
+	z-index: 1050;
+	padding: 10px;
+	font-size: 16pt;
+}
+#message-container .message.information {
+	background-color: #8d6;
+	position: relative;
+	width: 100%;
+	z-index: 150;
+	padding: 10px;
+	font-size: 16pt;
+}
+
+
+.blink {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {  
+  65% { opacity: 100; }
+  95% { opacity: 0; }
+}
+
+.drug-card {
+    border: 2px solid black;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    background-color: rgba(243, 156, 18, 0.8);
+    border-radius: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 12px;
+}
+
+.drug-wrapper {
+	border: 1px solid grey;
+	height: 100%;
+	text-align: center;
+	display: flex;
+    align-items: center;
+  	justify-content: center;
+}
+.medication-wrapper {
+	height: 100%;
+}
+
+.med-tray {
+	margin: 0 auto;
+	padding: 0px;
+}
+.medication-tray-label {
+	margin: 0px;
+	border: none;
+}
+
+.medication-tray-wrapper {
+	border: 3px solid grey;
+	padding: 0px;
+	margin: 15px;
+	height: 90px; 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+27,e1e1e1+81,f6f6f6+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 27%, #e1e1e1 81%, #f6f6f6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 27%,#e1e1e1 81%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 27%,#e1e1e1 81%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+}
+
+#pt-inr-start {
+	background-color: #e32;
+	color: white;
+    padding: 3px 15px;
+    height: 50px;
+    width: 100px;
+    font-family: sans-serif;
+    font-size: larger;
+    border-radius: 100px / 50px;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border: 3px solid rgb(105,105,105);   
+    box-shadow: inset -5px -4px 7px 1px rgb(105,105,105); 
+
+}
+
+.drug-card-selected {
+	margin-bottom: 10px;
+}
+
+.medication-wrapper hr {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.medication-wrapper input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+.pt-inr-header-wrapper img {
+	margin-right: 10px;
+}
+
+.pt-inr-cell-wrapper {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.pt-inr-answer-wrapper {
+	background-color: white;
+	overflow-y: scroll;
+}
+
+#pt-inr-monitor {
+	position: absolute;
+	bottom: 0;
+}
+
+#pt-inr-blood-droplet {
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* float: right; */
+    display: block;
+    right: 15%;
+}
+
+.guy-image {
+	margin: auto;
+}
+
+.k-selection-btn {
+    min-width: 100%;
+    margin-top: 20px;
+    color: black;
+    background-color: white !important;
+    border-color: #666 !important;
+    z-index: 1000;
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.vit-k-banner {
+    background-color: #9bd;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vit-k-timer {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 8px;
+    margin-top: 5px;
+    padding: 3px 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+.vit-k-timer hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	border-color: #888;
+}
+
+.final-countdown {
+	color: red;
+}
+
+.vit-k-blink {
+	animation: blinker 0.5s linear infinite;
+}
+
+.k-modal-btn {
+	min-width: 100%;
+}
+.vit-k-modal-header {
+	padding: 10px
+}
+
+.vit-k-modal-header img {
+	margin: -5px;
+}
+.vit-k-modal-header h3, .vit-k-modal-header h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+.vit-k-modal-header h4 {
+	margin-top: 2;
+	margin-bottom: 2;
+
+}
+
+.vit-k-img-wrapper {
+	padding: 0px 45px;
+}
+
+.challenge-food hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.name-entry-modal .modal-body {
+	margin-bottom: 20px;
+}
+
+.name-entry-modal input {
+	width: 100%;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "coumadin-app",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "angular-permission": "^4.1.2",
+    "express": "4.14.x"
+  },
+  "scripts": {
+    "start": "node host.js 3000"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "humanize-duration": "^3.16.0"
+  }
+}

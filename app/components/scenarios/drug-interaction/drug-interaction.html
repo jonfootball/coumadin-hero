@@ -1,0 +1,70 @@
+<div class="container-fluid medication-wrapper" ng-controller="DrugInteractionController">
+	<div class="row quarter-height">
+		<div class="col-xs-12">
+			<img ng-src="{{activeScenario.config.icon}}" width="100" height="100" class="img-responsive mini-game-launch-img scenario-header-icon">
+			{{instructions}} by tapping on the medication in the cabinet. The medication will move to the tray when you tap it.
+		</div>
+	</div>
+	<div class="row percent-height-40">
+		<!-- drug cabinet section -->
+		<div class="col-xs-12 full-height">
+			<!-- top row of the drug cabinet -->
+			<div class="row third-height">
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[0]" location-id="0" ng-click="selectCabinetDrug(cabinetDrugs[0])"></drug-card>
+				</div>
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[1]" location-id="1" ng-click="selectCabinetDrug(cabinetDrugs[1])"></drug-card>
+				</div>
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[2]" location-id="2" ng-click="selectCabinetDrug(cabinetDrugs[2])"></drug-card>
+				</div>
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[3]" location-id="3" ng-click="selectCabinetDrug(cabinetDrugs[3])"></drug-card>
+				</div>
+			</div>
+			<!-- middle row of the drug cabinet -->
+			<div class="row third-height">
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[4]" location-id="4" ng-click="selectCabinetDrug(cabinetDrugs[4])"></drug-card>
+				</div>
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[5]" location-id="5" ng-click="selectCabinetDrug(cabinetDrugs[5])"></drug-card>
+				</div>
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[6]" location-id="6" ng-click="selectCabinetDrug(cabinetDrugs[6])"></drug-card>
+				</div>
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[7]" location-id="7" ng-click="selectCabinetDrug(cabinetDrugs[7])"></drug-card>
+				</div>
+			</div>
+			<!-- bottom row of the drug cabinet -->
+			<div class="row third-height">
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[8]" location-id="8" ng-click="selectCabinetDrug(cabinetDrugs[8])"></drug-card>
+				</div>
+				<div class="col-xs-3 drug-wrapper"">
+					<drug-card drug="cabinetDrugs[9]" location-id="9" ng-click="selectCabinetDrug(cabinetDrugs[9])"></drug-card>
+				</div>
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[10]" location-id="10" ng-click="selectCabinetDrug(cabinetDrugs[10])"></drug-card>
+				</div>
+				<div class="col-xs-3 drug-wrapper">
+					<drug-card drug="cabinetDrugs[11]" location-id="11" ng-click="selectCabinetDrug(cabinetDrugs[11])"></drug-card>
+				</div>
+			</div>
+			<!-- Medication tray area -->
+			<div class="row quarter-height medication-tray-wrapper">
+				<label class="text-center col-xs-12  medication-tray-label">Medication Tray</label>
+				<div class="med-tray col-xs-12">
+				<div class="col-xs-6 drug-wrapper no-border">
+					<drug-card drug="selectedDrugs[0]" location-id="0" ng-click="selectTrayDrug(selectedDrugs[0])" class="drug-card-selected"></drug-card>
+				</div>
+				<div class="col-xs-6 drug-wrapper no-border">
+					<drug-card drug="selectedDrugs[1]" location-id="1" ng-click="selectTrayDrug(selectedDrugs[1])" class="drug-card-selected"></drug-card>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

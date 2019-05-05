@@ -1,0 +1,15 @@
+<ng-include src="'components/shared/app-header.html'"></ng-include>
+<div class="modal-header">
+	<img ng-src="{{scenario.config.icon}}" width="50" height="50" class="img-responsive mini-game-launch-img scenario-header-icon">
+    <h2 class="modal-title text-center" id="modal-title">{{scenario.config.motto}}</h2>
+</div>
+<div class="modal-body" id="modal-body">
+	<!-- <p>{{scenario.data.message}}</p>
+	<p ng-if="scenario.data.outcome === 'good'" class="text-center score-change score-change-good"><strong>+{{scenario.data.scoreChange}} Points</strong></p>
+	<p ng-if="scenario.data.outcome === 'neutral'" class="text-center score-change score-change-neutral"><strong>+{{scenario.data.scoreChange}} Points</strong></p>
+	<p ng-if="scenario.data.outcome === 'bad'" class="text-center score-change score-change-bad"><strong>{{scenario.data.scoreChange}} Points</strong></p> -->
+	<ng-include src="'/components/scenarios/' + scenario.config.id + '/' + scenario.status.outcome + '-result.html'"></ng-include>
+</div>
+<div class="modal-footer" ng-class="{'vitamin-k-foods-footer': scenario.config.id === 'vitamin-k-foods'}" >
+	<button class="btn text-center" type="button" title="Retry this scenario" ng-click="resume()">Save Points and Keep Playing</button>
+</div>

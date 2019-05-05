@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <title>Coumadin Hero</title>
+	    <meta name="viewport" content="width=device-width">
+
+	    <!-- Library Scripts & Styles -->
+	    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	    <!-- <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script> -->
+	    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+ 		<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	    <script type="text/javascript" src="bower_components/firebase/firebase.js"></script>
+	    <!-- <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script> -->
+	    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+	    <!-- <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script> -->
+	    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+	    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	    <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+	    <script type="text/javascript" src="bower_components/angular-underscore-module/angular-underscore-module.js"></script>
+		<script type="text/javascript" src="bower_components/angular-permission/dist/angular-permission.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular-permission/dist/angular-permission-ng.min.js"></script>
+		<script type='text/javascript' src="bower_components/angular-media-queries/match-media.js"></script>
+		<script type='text/javascript' src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+		<script type='text/javascript' src="bower_components/ng-idle/angular-idle.min.js"></script>
+		<script type="text/javascript" src="lib/dragdroptouch/DragDropTouch.js"></script>
+	    <script type="text/javascript" src="lib/angular-timer.min.js"></script>
+
+	    <link rel="stylesheet" href="bower_components/angular/angular-csp.css">
+	    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	    <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+	    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+
+	    <!-- App Styles -->
+    	<link rel="stylesheet" href="css/yeti.bootswatch.min.css">
+    	<link rel="stylesheet" href="css/main.css">
+    	<link rel="stylesheet" media="screen and (min-width : 768px)" href="css/tablet.css">
+
+
+	    <!-- App Scripts -->
+	    <script type="text/javascript" src="js/app.js"></script>
+	    <script type="text/javascript" src="js/root-controller.js"></script>
+	    <script type="text/javascript" src="components/user/login-controller.js"></script>
+	    <script type="text/javascript" src="components/name-entry/name-entry-controller.js"></script>
+	    <script type="text/javascript" src="components/user/register-controller.js"></script>
+	    <script type="text/javascript" src="components/shared/landing-controller.js"></script>
+	    <script type="text/javascript" src="components/shared/coumadin-info-controller.js"></script>
+	    <script type="text/javascript" src="components/shared/minigame-launch-controller.js"></script>
+	    <script type="text/javascript" src="components/minigames/minigame-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/scenario-coumadin-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/scenario-rules-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/scenario-outro-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/scenario-trophy-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/more-info-override-controller.js"></script>
+	    <!-- <script type="text/javascript" src="components/scenarios/diet/diet-controller.js"></script> -->
+	    <!-- <script type="text/javascript" src="components/scenarios/diet/food-card-directive.js"></script> -->
+	    <script type="text/javascript" src="components/scenarios/vitamin-k-foods/vitamin-k-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/vitamin-k-foods/components/time-expired/time-expired-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/vitamin-k-foods/components/excessive-skips/excessive-skips-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/vitamin-k-foods/components/excessive-retries/excessive-retries-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/vitamin-k-foods/components/feedback/feedback-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/vitamin-k-foods/components/game-lose/game-lose-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/vitamin-k-foods/components/game-win/game-win-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/vitamin-k-foods/components/game-win-question/game-win-question-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/drug-interaction/drug-interaction-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/pt-inr-monitoring/pt-inr-monitoring-controller.js"></script>
+	    <script type="text/javascript" src="components/scenarios/drug-interaction/drug-card-directive.js"></script>
+	    <script type="text/javascript" src="js/filter.js"></script>
+	    <script type="text/javascript" src="components/shared/back-img-directive.js"></script>
+	    <script>
+		  // Initialize Firebase
+		  var config = {
+			apiKey: "AIzaSyDm4KGOWGrvLD8JDV5rxP37u_tr5bTkEvk",
+			authDomain: "coumadin-hero.firebaseapp.com",
+			databaseURL: "https://coumadin-hero.firebaseio.com",
+			projectId: "coumadin-hero",
+			storageBucket: "",
+			messagingSenderId: "277490267683"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+	</head>
+	<body ng-app="CoumadinApp">
+		<div ng-controller="RootController">
+			<div id="message-container">
+				<ng-include src="'components/shared/message-banner.html'"></ng-include>
+			</div>
+			<h5 ng-if="viewInfo !== null && viewInfo !== undefined && viewInfo.length > 0" id="view-info" class="text-center"><em>{{viewInfo}}</em></h5>
+			
+			<div class="app-body">
+				<ng-view></ng-view>
+			</div>
+		</div>
+	</body>
+</html>
